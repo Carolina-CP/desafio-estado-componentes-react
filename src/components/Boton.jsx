@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const Boton = () => {
+ 
+const Boton = (boton, setBoton) => {
+
   return (
-    <button className="btn btn-success mt-3" type="submit">Ingresar</button>
+    <button className="btn btn-success mt-3" disabled={!boton} type="text">Ingresar</button>
   )
 }
 
